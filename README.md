@@ -1,5 +1,5 @@
 # Gesture Detection
-A Flutter app that detects and predicts hand signs using a custom-trained model.
+A Flutter app that detects and predicts hand signs using a 1DCNN custom-trained model.
 
 ## Features
 Recognizes different hand signs with up to 97% accuracy
