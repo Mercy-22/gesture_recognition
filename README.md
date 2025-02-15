@@ -1,16 +1,19 @@
-# gesture_detection
+# Gesture Detection
+A Flutter app that detects and predicts hand signs using a custom-trained model.
 
-A new Flutter project.
+## Features
+Recognizes different hand signs with up to 97% accuracy
+- Uses MediaPipe for extracting hand landmarks
+- Processes images locally using FastAPI
+## Technology Stack
+- Flutter (for the mobile app)
+- TensorFlow Lite (for on-device ML)
+- MediaPipe (for hand landmark detection)
+- FastAPI (for local server-based processing)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How It Works
+- The app captures an image of the hand gesture.
+- The image is sent to a FastAPI server.
+- The server extracts hand landmarks using MediaPipe.
+- The landmarks are processed by a custom-trained model to predict the sign.
+- The app displays the recognized gesture.
